@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>BLOODMONEY — Pedro Henrique</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="game">
+    <header>
+      <h1>BLOODMONEY</h1>
+      <p>Pedro Henrique Edition</p>
+    </header>
+
+    <section class="hud">
+      <div><span>DINHEIRO</span><strong id="money">$0</strong></div>
+      <div><span>POR TOQUE</span><strong id="perClick">$1</strong></div>
+      <div><span>META</span><strong>$25.000</strong></div>
+    </section>
+
+    <section class="scene">
+      <div class="sign">TOQUE NO PEDRO<br><small>para ganhar dinheiro</small></div>
+      <button id="pedro" class="character" aria-label="Pedro Henrique">
+        <div class="hair"></div>
+        <div class="face">
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+          <div class="smile"></div>
+        </div>
+        <div class="body"></div>
+        <strong class="name">PEDRO HENRIQUE</strong>
+      </button>
+      <div id="feedback" class="feedback"></div>
+    </section>
+
+    <section class="shop">
+      <h2>LOJA</h2>
+      <button class="upgrade" data-cost="50" data-add="1">
+        <span>📣 Divulgação</span>
+        <b>$50</b>
+        <small>+1 por toque</small>
+      </button>
+      <button class="upgrade" data-cost="250" data-add="5">
+        <span>⭐ Campanha</span>
+        <b>$250</b>
+        <small>+5 por toque</small>
+      </button>
+      <button class="upgrade" data-cost="1000" data-add="25">
+        <span>🚀 Patrocínio</span>
+        <b>$1.000</b>
+        <small>+25 por toque</small>
+      </button>
+    </section>
+
+    <div class="bottom">
+      <button id="reset">REINICIAR</button>
+      <p id="status">Toque em Pedro para começar.</p>
+    </div>
+  </main>
+  <script src="js/game.js"></script>
+</body>
+</html>
